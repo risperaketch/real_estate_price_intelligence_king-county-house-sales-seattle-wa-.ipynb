@@ -35,8 +35,6 @@ Accurate house price prediction powers three high-value business functions — a
 - **Target transformation:** `log(price)` applied before training — compresses the right-skewed distribution into near-normal form; predictions exponentiated back to dollars for evaluation
 - **Feature scaling:** Min-Max normalization [0, 1] — prevents high-range features (sqft: 290–13,540) from dominating low-range features (waterfront: 0–1) during gradient updates
 
-> **Fallback built in:** If `kc_house_data.csv` is not found, the notebook automatically generates a statistically representative synthetic dataset matching King County distributions — so it runs for anyone who opens it, instantly.
-
 ---
 
 ## Methodology
